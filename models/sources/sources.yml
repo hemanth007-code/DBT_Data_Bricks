@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: source_bronze
+    database: dbtsparkproject
+    schema: bronze
+    tables:
+      - name: trips
+
+  - name: source_silver
+    database: dbtsparkproject
+    schema: silver
+    tables:
+      - name: customers
+      - name: drivers
+      - name: payments
+      - name: vehicles
+      - name: locations
